@@ -5,7 +5,6 @@ echo "Bulk cache in the directory? y/n/e"
 shopt -s nocasematch; read -r aim;
 
 if [ "$aim" = "y" ]; then
-    $list
     $bulk
 fi
 
