@@ -1,4 +1,6 @@
-. vars.sh
+# variables regarding file manipulation
+
+bulk=$(find . -type f -iname "*cache*" -delete && find . -type d -iname "*cache*" -exec rm -rf {} +)
 
 echo "Bulk cache in the directory? y/n/e"
 
