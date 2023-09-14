@@ -2,6 +2,8 @@
 
 bulk=$(find . -type f -iname "*cache*" -delete && find . -type d -iname "*cache*" -exec rm -rf {} +)
 
+cd $HOME
+
 echo "Bulk cache in the directory? y/n/e"
 
 shopt -s nocasematch; read -r aim;
